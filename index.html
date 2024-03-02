@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+    body{
+    background-color:black;
+    color: aliceblue;
+}
+.main{
+    position: relative;
+    height: 100vh;
+}
+.nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 20px;
+    height: 14vh;
+}
+.nav h1{
+    margin-left: 2vw;
+    font-size: 4vw;
+    
+
+}
+.nav li{
+    margin-right: 2vw;
+    display: flex;
+
+}
+.nav ul{
+    display: flex;
+    margin-right: 2vw;
+    font-size: 1.4vw;
+    gap: 20px;
+}
+.nav a{
+    text-decoration: none;
+   color: aliceblue;
+}
+.nav button{
+    padding: 10px 10px;
+    background-color:black;
+    border-radius: 10px;
+    font-size: 1vw;
+    margin-top: -6px;
+    font-weight: 600;
+}
+.more button a{
+    color: aliceblue;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30vh;
+}
+.wrapper .first-text {
+    font-size: 4vw;
+    color: #fff;
+}
+.wrapper .sec-texts {
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+.sec-texts li {
+    position: relative;
+    top: 0;
+    font-size: 60px;
+    color: #0ef;
+    list-style: none;
+    padding: 0 20px;
+    text-shadow: 0 0 10px #0ef;
+    animation: slide 12s steps(4) infinite, colorful 6s infinite;
+}
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+@keyframes colorful {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+.sec-texts li span {
+    position: relative;
+}
+.sec-texts li span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 200vw;
+    height: 8vh;
+    background: #000000;
+    border-left: 2px solid #0ef;
+    animation: typing 1.5s steps(20) infinite alternate;
+}
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -40px 0 40px;
+    }
+}
+
+.wrapper h1{
+    font-size: 5vw;
+    margin-top: -1vh;
+    
+}
+.hero{
+    height: 13vh;
+    background-color: white;
+    margin-top: 2vh;
+    color: #000000;
+}
+.info h5{
+    font-size: 1.5vw;
+    text-align: center;
+}
+.hero h1{
+    font-size: 4vw;
+    text-align: center;
+}
+
+
+
+
+
+.proj{
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-evenly;
+    display: flex;
+}
+.info1{
+    height: 50vh;
+    background-color: white;
+    width: 30vw;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 0 50px white;
+    color: #000000;
+    border-bottom: #000000 solid 2px;
+}
+.info2{
+    height: 50vh;
+    background-color: white;
+    width: 30vw;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 0 50px white;
+    border-bottom: #000000 solid 2px;
+}
+.info3{
+    height: 50vh;
+    background-color: white;
+    width: 30vw;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 0 50px white;
+    border-bottom: #000000 solid 2px;
+}
+.info1 h1{
+    text-align: center;
+    font-size: 2vw;
+    
+
+}
+.info1 p{
+        text-align: center;
+        font-size: 1.5vw;
+}
+.info1 button{
+    justify-content: center;
+    margin-top: 17vh;
+    margin-left: 15vw;
+    width: 13vw;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+.info1 button a{
+    font-size: 1.6vw;
+   text-decoration: none;
+   color: black;
+}
+.info2 h1{
+    text-align: center;
+    font-size: 2vw;
+    
+
+}
+.info2 p{
+        text-align: center;
+        font-size: 1.5vw;
+}
+.info2 button{
+    justify-content: center;
+    margin-top: 17vh;
+    margin-left: 15vw;
+    width: 13vw;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+.info2 button a{
+    font-size: 1.6vw;
+   text-decoration: none;
+   color: black;
+}
+.info3 h1{
+    text-align: center;
+    font-size: 2vw;
+    
+
+}
+.info3 p{
+        text-align: center;
+        font-size: 1.5vw;
+        margin-bottom: 2vh;
+}
+.info3 button{
+    justify-content: center;
+    margin-top: 17vh;
+    margin-left: 15vw;
+    width: 13vw;
+    border-radius: 20px;
+    background-color: white;
+}
+.info3 button a{
+    font-size: 1.6vw;
+   text-decoration: none;
+   color: black;
+}
+.edu {
+    display: flex;
+    background-color: white;
+    height: 70vh;
+    margin-top: 20vh;
+}
+.cert{
+    margin-top: 20vh;
+    margin-left: 2vw;
+    display: flex;
+   
+}
+.per {
+    margin-top: 20vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 10vw;
+    position: relative;
+    margin-left: -47vw;
+
+}
+#about{
+    height: 50vh;
+    background-color: white;
+    padding: 40px;
+}
+#about h1 {
+    justify-content: start;
+    margin-right: 3vw;
+    display: flex;
+    
+}
+#about p{
+    font-size: 1.8vw;
+   
+    text-align: justify;
+  text-justify: inter-word;
+}
+
+@media (max-width:600px) {
+    .nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    border-radius: 20px;
+    height: 8vh;
+}
+.nav li {
+    margin-right: 2vw;
+    display: none;
+}
+.nav h1 {
+    margin-left: 2vw;
+    font-size: 6vw;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 33vh;
+}
+.sec-texts li {
+    position: relative;
+    top: 0;
+    font-size: 23px;
+    color: #0ef;
+    list-style: none;
+    padding: 0 20px;
+    text-shadow: 0 0 10px #0ef;
+    animation: slide 12s steps(4) infinite, colorful 6s infinite;
+    margin-left: -8vw;
+}
+.wrapper h1 {
+    font-size: 9vw;
+    margin-top: -4vh;
+    position: absolute;
+}
+.info h5 {
+    font-size: 3.5vw;
+    text-align: center;
+}
+.info1 {
+    height: 13vh;
+    background-color: #0ef;
+    width: 30vw;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 0 50px #0ef;
+    color: #000000;
+    border-bottom: #000000 solid 2px;
+}
+.info2 {
+    height: 13vh;
+    background-color: #0ef;
+    width: 30vw;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 0 50px #0ef;
+    border-bottom: #000000 solid 2px;
+}
+.info3 {
+    height: 13vh;
+    background-color: #0ef;
+    width: 30vw;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 0 50px #0ef;
+    border-bottom: #000000 solid 2px;
+}
+.info1 button {
+    justify-content: center;
+    margin-top: 4.3vh;
+    margin-left: 12vw;
+    width: 16vw;
+    border-radius: 20px;
+    background-color: #0ef;
+}
+.info2 button {
+    justify-content: center;
+    margin-top: 4.3vh;
+    margin-left: 12vw;
+    width: 16vw;
+    border-radius: 20px;
+    background-color: #0ef;
+}
+.info3 button {
+    justify-content: center;
+    margin-top: 2.8vh;
+    margin-left: 12vw;
+    width: 16vw;
+    border-radius: 20px;
+    background-color: #0ef;
+}
+.edu {
+    display: flex;
+    background-color: #0ef;
+    height: 30vh;
+    margin-top: -4vh;
+}
+.cert {
+    margin-top: 10vh;
+    margin-right: -63vw;
+    
+    display: flex;
+}
+.per {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2vw;
+    gap: 4vw;
+    position: relative;
+    margin-left: -47vw;
+}
+#about {
+    height: 14vh;
+   
+    background-color: floralwhite;
+}
+
+}
+    </style>
+    <body>
+<div class="main">
+            <div class="nav">
+                <h1>Sonu Vishwakarma </h1>
+                <div class="more">
+                    <ul>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="https://www.linkedin.com/in/sonu-vishwakarma-1339b122b/">LINKEDIN</a></li>
+                        <li><a href="https://github.com/sonuvishwakarma2004">GITHUB</a></li>
+                        <button><a href="Sonu Vishwakarma CV.pdf" download="">Download CV</a></button>
+                    </ul>
+                 </div>
+            </div>
+            <div class="wrapper">
+                <h1>I'M A</h1>
+                <ul class="sec-texts">
+                    <li><span>CYBERSECURITY ANALYST</span></li>
+                    <li><span>FRONTEND DEVELOPER</span></li>
+                    <li><span>&nbsp &nbsp FREELANCER</span></li>
+                </ul>
+            </div>
+                <div class="info">
+                <h5><i>I bring a combination of technical skills, a passion for cybersecurity and self motivated work ethic. 
+                    With a strong foundation in IT and programming, I possess a deep understanding of various hacking 
+                    techniques and methodologies.</i></h5>
+                </div>
+            </div>
+            <div class="hero">
+                <h1><i>MY PROJECTS</i></h1>
+                <div class="proj">
+                    <div class="info1">
+                        <h1>SHOPING SITE</h1>
+                        <p>Shopshere.com  is a shoping site through that you can order things,this project is not fully functional</p>
+                        <button><a href=" https://sonuvishwakarma2004.github.io/Shopshere/"><i>VIEW PROJECT</i></a></button>
+                       
+                    </div>
+                    <div class="info2">
+                        <h1>WALLPAER APK</h1>
+                        <p>This is my first Android Development project,In this apk you will have some wallpaper of my bestfriends</p>
+                        <button><a href="FIRST APK.apk" download=""><i>VIEW PROJECT</i></a></button>
+                    </div>
+                    <div class="info3">
+                        <h1>SOON</h1>
+                        <p>Currently working on some new projects,Soon it will be showcased on my portfolio</p>
+                        <button><a href="#"><i>VIEW PROJECT</i></a></button>
+                    </div>
+                </div>
+                    <div class="edu">
+                        <div class="cert">
+                            <h1><i>SKILLS AND EDUCATION</i></h1>
+                            <div class="per">
+                            <div class="inffo1">
+                            <ul>
+                                <li>BSC-IT(PURSING)</li>
+                                <li>ETHICAL HACKING ESSENTIALS</li>
+                                <li>NETWORK DEFENCE ESSENTIALS</li>
+                                <li>DIGITAL FORENSICS ESSENTIALS</li>
+                                <li>MSC-IT</li>
+                                <li>ADVANCE EXCLE</li>                
+                            </ul>
+                        </div class="inffo2">
+                            <div>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>C++</li>
+                                <li>BASH</li>
+                                <li>LINUX</li>
+                                <li>PHP</li>
+                            </ul>
+                        </div>
+                        <div class="inffo3">
+                            <ul>
+                                <li>BURPSUIT</li>
+                                <li>WINDOWS</li>
+                                <li>MS OFFICE</li>
+                                <li>NETWORKING</li>
+                                <li>ANALISYS</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                 </div>
+                </div>  
+                <hr>
+                 <div id="about">
+                        <h1><i>ABOUT ME</i></h1>
+                        <p>My passion for hacking is rooted in a deep fascination with the intricate world of cybersecurity and digital systems.Exploring the complexities of computer networks and programming languages fuels my intellectual curiosity,Harnessing my skills in penetration testing and vulnerability assessment, I aim to contribute to the ongoing evolution of cybersecurity, ensuring a safer and more resilient online environment for everyone.</p>
+                        <di>
+                  </div>
+                  </div>
+                  
+</div>           
+
+    </body>
+</html>
